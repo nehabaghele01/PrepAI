@@ -27,8 +27,7 @@ function Register() {
       await api.post("/auth/register", form);
 
       toast.success("Account Created Successfully!");
-
-      window.location.replace("/login");
+      navigate("/login");
     } catch (error) {
       toast.error(error.response?.data?.message || "Registration Failed");
     }

@@ -31,7 +31,7 @@ function Login() {
 
       toast.success("Welcome back!");
 
-      window.location.href = "/dashboard";
+       navigate("/dashboard");
     } catch (error) {
       toast.error(error.response?.data?.message || "Login Failed");
     }
