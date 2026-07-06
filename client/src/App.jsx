@@ -1,4 +1,11 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate,
+  useLocation,
+} from "react-router-dom";
+
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
@@ -15,16 +22,20 @@ import Settings from "./pages/Settings";
 import AdminDashboard from "./pages/AdminDashboard";
 import AdminUsers from "./pages/AdminUsers";
 
-function App() {
+function AppContent() {
+  const location = useLocation();
+
   const token = localStorage.getItem("token");
 
+  const hideNavbar =
+    location.pathname === "/login" ||
+    location.pathname === "/register";
+
   return (
-    <BrowserRouter>
-      {token && <Navbar />}
+    <>
+      {token && !hideNavbar && <Navbar />}
 
       <Routes>
-        {/* default route */}
-
         <Route
           path="/"
           element={
@@ -33,7 +44,6 @@ function App() {
         />
 
         <Route path="/login" element={<Login />} />
-
         <Route path="/register" element={<Register />} />
 
         <Route
@@ -107,6 +117,7 @@ function App() {
             </ProtectedRoute>
           }
         />
+
         <Route
           path="/admin"
           element={
@@ -116,11 +127,23 @@ function App() {
           }
         />
 
-        <Route path="/admin/users" element={<AdminUsers />} />
+        <Route
+          path="/admin/users"
+          element={
+            <ProtectedRoute>
+              <AdminUsers />
+            </ProtectedRoute>
+          }
+        />
 
-        <Route path="/ai" element={<AIAssistant />} />
-
-        {/* if wrong url */}
+        <Route
+          path="/ai"
+          element={
+            <ProtectedRoute>
+              <AIAssistant />
+            </ProtectedRoute>
+          }
+        />
 
         <Route
           path="*"
@@ -129,6 +152,14 @@ function App() {
           }
         />
       </Routes>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
     </BrowserRouter>
   );
 }
