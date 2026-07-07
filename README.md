@@ -192,27 +192,81 @@ VITE_API_URL=YOUR_BACKEND_URL/api
 
 ## 📸 Screenshots
 
-### Login Page
+### 🔐 Login Page
 
-(Add Screenshot)
-
-### Dashboard
-
-(Add Screenshot)
-
-### DSA Tracker
-
-(Add Screenshot)
-
-### AI Coach
-
-(Add Screenshot)
-
-### Admin Dashboard
-
-(Add Screenshot)
+![Login Page](./screenshots/login.png)
 
 ---
+
+### 📝 Register Page
+
+![Register Page](./screenshots/register.png)
+
+---
+
+### 📊 Dashboard
+
+![Dashboard](./screenshots/dashboard.png)
+
+---
+
+### 📈 Dashboard Statistics
+
+![Dashboard Statistics](./screenshots/dashboard-stats.png)
+
+---
+
+### 💻 DSA Tracker
+
+![DSA Tracker](./screenshots/dsa.png)
+
+---
+
+### 🧠 Aptitude Tracker
+
+![Aptitude Tracker](./screenshots/aptitude.png)
+
+---
+
+### 🎯 Interview Tracker
+
+![Interview Tracker](./screenshots/interview.png)
+
+---
+
+### 📁 Project Tracker
+
+![Project Tracker](./screenshots/project.png)
+
+---
+
+### 📄 Resume Tracker
+
+![Resume Tracker](./screenshots/resume.png)
+
+---
+
+### 🤖 AI Coach
+
+![AI Coach](./screenshots/ai-coach.png)
+
+---
+
+### 👤 Profile Page
+
+![Profile](./screenshots/profile.png)
+
+---
+
+### 👨‍💼 Admin Dashboard
+
+![Admin Dashboard](./screenshots/admin-dashboard.png)
+
+---
+
+### 👥 Admin User Management
+
+![Admin Users](./screenshots/admin-users.png)
 
 ## 🎯 Future Improvements
 
