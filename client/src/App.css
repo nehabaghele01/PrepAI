@@ -2530,3 +2530,57 @@ display:none;
 
 
 
+
+
+
+
+/* ===== UI FIX PATCH 1 ===== */
+
+html,
+body,
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+.dashboard,
+.profile-page,
+.settings-page,
+.tracker-page {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: nowrap;
+}
+
+.user-info {
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.avatar {
+  flex-shrink: 0;
+}
+
+.placement-menu {
+  flex-shrink: 0;
+}
+
+
+
