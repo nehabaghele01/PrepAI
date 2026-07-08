@@ -50,18 +50,18 @@
   }
 }
 
-/* body {
-  margin: 0;
-} */
 body {
+  margin: 0;
+}
+/* body {
   margin: 0;
   padding: 0;
   width: 100%;
   overflow-x: hidden;
   background: #111827;
-}
+} */
 
-/* #root {
+#root {
   width: 1126px;
   max-width: 100%;
   margin: 0 auto;
@@ -71,17 +71,17 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-} */
+}
 
 
-#root {
+/* #root {
   width: 100%;
   min-height: 100vh;
   margin: 0;
   padding: 0;
   display: block;
   box-sizing: border-box;
-}
+} */
 h1,
 h2 {
   font-family: var(--heading);
