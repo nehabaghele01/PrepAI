@@ -81,11 +81,13 @@ h1 {
 .dashboard {
   width: 100%;
 
-  max-width: none;
+  /* max-width: none; */
+   max-width:1400px;
 
   margin: auto;
 
-  padding: 30px 60px;
+  /* padding: 30px 60px; */
+  padding: 30px ;
   box-sizing: border-box;
 }
 
