@@ -81,13 +81,11 @@ h1 {
 .dashboard {
   width: 100%;
 
-  /* max-width: none; */
-   max-width:1400px;
+  max-width: none;
 
   margin: auto;
 
-  /* padding: 30px 60px; */
-  padding: 30px ;
+  padding: 30px 60px;
   box-sizing: border-box;
 }
 
@@ -3400,37 +3398,6 @@ table{
 
 .motivation-card{
     width:100%;
-}
-
-}
-
-.goal-list{
-    display:flex;
-    flex-direction:column;
-    gap:14px;
-}
-
-.goal-item{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
-.motivation-quote{
-    margin-top:20px;
-    text-align:center;
-    line-height:1.6;
-    font-style:italic;
-}
-
-@media(max-width:768px){
-
-.goal-item{
-    align-items:flex-start;
-}
-
-.goal-item span:last-child{
-    flex:1;
 }
 
 }
