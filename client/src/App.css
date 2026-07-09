@@ -2523,17 +2523,6 @@ display:none;
 }
 
 } 
-
-
-
-
-
-
-
-
-
-
-
 /* ===== UI FIX PATCH 1 ===== */
 
 html,
@@ -2625,20 +2614,19 @@ body {
 
 .dashboard-summary {
   display: flex;
-  justify-content: center;   /* Center both cards */
+  justify-content: center;
   align-items: stretch;
-  gap: 30px;                 /* Equal gap */
+  gap: 24px;
   width: 100%;
   margin: 30px auto;
 }
 
 .summary-card {
   flex: 1;
-  max-width: 500px;          /* Both cards same width */
+  max-width: 600px;
+  margin: 0;
   background: #fff;
-  border-radius: 20px;
-  padding: 30px;
+  padding: 20px;
+  border-radius: 16px;
   text-align: center;
-  width: 50%;
-   flex: 1;
 }
