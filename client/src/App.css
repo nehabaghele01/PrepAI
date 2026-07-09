@@ -3181,3 +3181,120 @@ button{
 }
 
 }
+
+
+/* =========================================
+   MOBILE RESPONSIVE (LAST LINES OF FILE)
+=========================================*/
+
+@media screen and (max-width:768px){
+
+.dashboard{
+    width:100%;
+    padding:16px;
+    box-sizing:border-box;
+}
+
+/* HERO */
+
+.hero-section{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:20px !important;
+}
+
+.hero-left,
+.hero-right{
+    width:100% !important;
+    max-width:100% !important;
+}
+
+.hero-left h1{
+    font-size:34px !important;
+    line-height:1.2;
+}
+
+.hero-left p{
+    font-size:15px;
+}
+
+.hero-meta{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.hero-badge{
+    width:100%;
+    justify-content:center;
+}
+
+/* QUICK ACTIONS */
+
+.quick-actions{
+    display:grid !important;
+    grid-template-columns:1fr 1fr !important;
+    gap:12px !important;
+}
+
+.quick-btn{
+    width:100%;
+}
+
+/* SUMMARY */
+
+.dashboard-summary{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+}
+
+.summary-card{
+    width:100% !important;
+}
+
+/* TRACKERS */
+
+.cards{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:18px;
+}
+
+.stats-card{
+    width:100%;
+}
+
+/* AI CARD */
+
+.ai-card{
+    width:100%;
+}
+
+/* NAVBAR */
+
+.navbar{
+    flex-direction:column;
+    align-items:center;
+    padding:18px;
+}
+
+.nav-links{
+    width:100%;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+}
+
+.user-info{
+    margin-left:0;
+}
+
+/* TABLES */
+
+table{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+}
