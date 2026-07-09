@@ -27,8 +27,12 @@ function AdminDashboard() {
   }, []);
 
   if (!data) {
-    return <h2>Loading...</h2>;
-  }
+  return (
+    <div className="page-loader">
+      <h2>Loading...</h2>
+    </div>
+  );
+}
 
   return (
     <div className="tracker-page">
