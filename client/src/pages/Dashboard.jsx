@@ -64,8 +64,12 @@ function Dashboard() {
   }, []);
 
   if (!data) {
-    return <h2>Loading...</h2>;
-  }
+  return (
+    <div className="dashboard-loading">
+      <h2>Loading...</h2>
+    </div>
+  );
+}
 
   return (
     <div className="dashboard">

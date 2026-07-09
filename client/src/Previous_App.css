@@ -2731,3 +2731,18 @@ body{
 
     background-attachment: fixed;
 }
+
+
+.dashboard-loading{
+    min-height:calc(100vh - 64px); /* navbar height */
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#18181f;   /* same as website */
+
+    color:white;
+    font-size:32px;
+    font-weight:700;
+}
