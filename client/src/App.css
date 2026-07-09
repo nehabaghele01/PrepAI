@@ -3031,3 +3031,153 @@ body{
   }
 
 }
+
+@media (max-width:768px){
+
+.hero-section{
+    flex-direction:column;
+    gap:24px;
+}
+
+.hero-left,
+.hero-right{
+    width:100%;
+}
+
+.hero-right{
+    max-width:100%;
+}
+
+}
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    gap:18px;
+    padding:18px;
+}
+
+.nav-links{
+    width:100%;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.user-info{
+    margin-left:0;
+}
+
+}
+@media(max-width:768px){
+
+.hero-left h1{
+    font-size:2rem;
+}
+
+.hero-left p{
+    font-size:15px;
+    line-height:1.7;
+}
+
+}
+@media(max-width:768px){
+
+.hero-meta{
+    flex-direction:column;
+    width:100%;
+}
+
+.hero-badge{
+    width:100%;
+}
+
+}
+@media(max-width:768px){
+
+.motivation-card{
+    width:100%;
+    padding:24px;
+}
+
+}
+@media(max-width:768px){
+
+.quick-actions{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+}
+
+.quick-btn{
+    width:100%;
+}
+
+}
+@media(max-width:768px){
+
+.dashboard-summary{
+    flex-direction:column;
+}
+
+.summary-card{
+    width:100%;
+}
+
+}
+@media(max-width:768px){
+
+.cards{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:18px;
+}
+
+}
+.problem-card{
+    overflow-x:auto;
+}
+
+table{
+    min-width:650px;
+}
+@media(max-width:768px){
+
+.dashboard,
+.tracker-page,
+.profile-page{
+    padding:20px;
+}
+
+}
+@media(max-width:768px){
+
+h1{
+    font-size:2rem;
+}
+
+h2{
+    font-size:1.5rem;
+}
+
+h3{
+    font-size:1.2rem;
+}
+
+}
+@media(max-width:768px){
+
+button{
+    min-height:48px;
+}
+
+}
+@media(max-width:768px){
+
+.card,
+.problem-card,
+.summary-card,
+.motivation-card{
+    padding:20px;
+}
+
+}
