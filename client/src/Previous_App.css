@@ -2791,3 +2791,15 @@ body{
   font-size: 32px;
   font-weight: 700;
 }
+
+.admin-page{
+    background:
+        radial-gradient(circle at top left, rgba(37,99,235,.18), transparent 35%),
+        radial-gradient(circle at top right, rgba(59,130,246,.14), transparent 30%),
+        linear-gradient(
+            180deg,
+            #0b1224 0%,
+            #111827 40%,
+            #161b2f 100%
+        );
+}
