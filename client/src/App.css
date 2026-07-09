@@ -2621,3 +2621,17 @@ body {
 .hero-right{
     width:420px;   /* Goal card */
 }
+
+
+.progress-container {
+    display: flex;
+    justify-content: center;   /* Center the cards */
+    align-items: stretch;
+    gap: 30px;                 /* Equal space between cards */
+    width: 100%;
+}
+
+.progress-card {
+    flex: 1;                   /* Both cards take equal width */
+    max-width: 600px;          /* Optional */
+}
