@@ -2771,3 +2771,23 @@ body{
 
     transition:.25s;
 }
+
+/* ===========================
+   Full Page Loader
+=========================== */
+
+.page-loader {
+  width: 100%;
+  min-height: calc(100vh - 64px); /* navbar height */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #18181f;
+
+  color: #ffffff;
+
+  font-size: 32px;
+  font-weight: 700;
+}
