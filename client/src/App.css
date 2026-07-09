@@ -2623,15 +2623,22 @@ body {
 }
 
 
-.progress-container {
-    display: flex;
-    justify-content: center;   /* Center the cards */
-    align-items: stretch;
-    gap: 30px;                 /* Equal space between cards */
-    width: 100%;
+.dashboard-summary {
+  display: flex;
+  justify-content: center;   /* Center both cards */
+  align-items: stretch;
+  gap: 30px;                 /* Equal gap */
+  width: 100%;
+  margin: 30px auto;
 }
 
-.progress-card {
-    flex: 1;                   /* Both cards take equal width */
-    max-width: 600px;          /* Optional */
+.summary-card {
+  flex: 1;
+  max-width: 500px;          /* Both cards same width */
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  width: 50%;
+   flex: 1;
 }
