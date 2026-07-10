@@ -3569,3 +3569,40 @@ table{
 }
 
 }
+
+
+/* ======================================================
+   Mobile Table Scroll (Admin Pages)
+====================================================== */
+
+.table-scroll{
+    width:100%;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+}
+
+.table-scroll table{
+    min-width:700px;
+    border-collapse:collapse;
+}
+
+@media (max-width:768px){
+
+.table-scroll{
+    overflow-x:auto;
+}
+
+.table-scroll::-webkit-scrollbar{
+    height:6px;
+}
+
+.table-scroll::-webkit-scrollbar-thumb{
+    background:#555;
+    border-radius:10px;
+}
+
+.table-scroll table{
+    min-width:700px;
+}
+
+}

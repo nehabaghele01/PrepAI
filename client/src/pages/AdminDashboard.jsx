@@ -78,6 +78,7 @@ function AdminDashboard() {
       </h2>
 
       <div className="problem-card">
+         <div className="table-scroll">
         <table
           style={{
             width: "100%",
@@ -103,6 +104,7 @@ function AdminDashboard() {
             ))}
           </tbody>
         </table>
+        </div>
       </div>
     </div>
   );
