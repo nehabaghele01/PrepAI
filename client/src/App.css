@@ -2792,74 +2792,269 @@ body{
   font-weight: 700;
 }
 
+/* .admin-page{
+    background:
+        radial-gradient(circle at top left, rgba(37,99,235,.18), transparent 35%),
+        radial-gradient(circle at top right, rgba(59,130,246,.14), transparent 30%),
+        linear-gradient(
+            180deg,
+            #0b1224 0%,
+            #111827 40%,
+            #161b2f 100%
+        );
+} */
 
 
 
 /* ==========================================================
-   PREPAI RESPONSIVE PATCH
-   Add at END of App.css
+   RESPONSIVE PATCH
+   (Paste at the END of App.css)
 ========================================================== */
 
-/* ---------- Large Tablets ---------- */
+/* ---------- Large Tablet ---------- */
 
-@media (max-width:1024px){
+@media (max-width: 1024px) {
 
-.dashboard,
-.profile-page,
-.settings-page,
-.tracker-page{
+  .dashboard,
+  .tracker-page,
+  .profile-page,
+  .settings-page{
     padding:24px;
-}
+  }
 
-.hero-section{
+  .hero-section{
+    display:grid;
     grid-template-columns:1fr;
-    gap:28px;
-}
+    gap:30px;
+    padding:28px;
+  }
 
-.hero-right{
+  .hero-left{
+    text-align:center;
+    align-items:center;
+  }
+
+  .hero-left p{
+    max-width:100%;
+  }
+
+  .hero-meta{
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  .hero-right{
     width:100%;
     display:flex;
     justify-content:center;
-}
+  }
 
-.motivation-card{
+  .motivation-card{
     width:100%;
     max-width:420px;
     height:auto;
-}
+  }
 
-.dashboard-summary{
-    grid-template-columns:1fr;
-}
+  .dashboard-summary{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+  }
 
-.cards{
+  .cards{
     grid-template-columns:repeat(2,minmax(260px,1fr));
-}
-
-.profile-stats{
-    grid-template-columns:repeat(2,1fr);
-}
+  }
 
 }
 
 
-/* ---------- Tablets ---------- */
+/* ---------- Tablet ---------- */
 
 @media (max-width:768px){
 
-.dashboard,
-.profile-page,
-.settings-page,
-.tracker-page{
+  .dashboard,
+  .tracker-page,
+  .profile-page,
+  .settings-page{
     padding:18px;
+  }
+
+  .navbar{
+    padding:12px 18px;
+    flex-wrap:wrap;
+    height:auto;
+    gap:15px;
+  }
+
+  .logo{
+    font-size:22px;
+  }
+
+  .nav-links{
+    width:100%;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+
+  .hero-section{
+    padding:22px;
+  }
+
+  .hero-left h1{
+    font-size:32px;
+  }
+
+  .hero-left p{
+    font-size:15px;
+  }
+
+  .quick-actions{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+  }
+
+  .quick-btn{
+    width:100%;
+  }
+
+  .dashboard-summary{
+    grid-template-columns:1fr;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  .problem-card{
+    width:100%;
+    margin:20px 0;
+    overflow-x:auto;
+  }
+
+  table{
+    min-width:700px;
+  }
+
+  .profile-top{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .profile-avatar{
+    margin:auto;
+  }
+
+  .profile-details{
+    text-align:center;
+  }
+
+  .profile-item{
+    flex-direction:column;
+    gap:8px;
+    text-align:center;
+  }
+
+  .profile-stats{
+    grid-template-columns:1fr;
+  }
+
 }
 
-/* Navbar */
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:480px){
+
+  .dashboard,
+  .tracker-page,
+  .profile-page,
+  .settings-page{
+    padding:14px;
+  }
+
+  .hero-section{
+    padding:18px;
+    border-radius:18px;
+  }
+
+  .hero-left h1{
+    font-size:26px;
+    line-height:1.3;
+  }
+
+  .hero-left p{
+    font-size:14px;
+  }
+
+  .hero-meta{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .hero-badge{
+    justify-content:center;
+    width:100%;
+  }
+
+  .quick-actions{
+    grid-template-columns:1fr;
+  }
+
+  .dashboard-summary{
+    gap:14px;
+  }
+
+  .summary-card{
+    padding:20px;
+  }
+
+  .motivation-card{
+    padding:20px;
+  }
+
+  .goal-item{
+    font-size:15px;
+  }
+
+  .user-name{
+    display:none;
+  }
+
+  .navbar{
+    justify-content:center;
+  }
+
+  .nav-links{
+    gap:8px;
+  }
+
+}
+
+@media (max-width:768px){
+
+.hero-section{
+    flex-direction:column;
+    gap:24px;
+}
+
+.hero-left,
+.hero-right{
+    width:100%;
+}
+
+.hero-right{
+    max-width:100%;
+}
+
+}
+@media(max-width:768px){
 
 .navbar{
-    padding:12px 16px;
-    flex-wrap:wrap;
-    gap:14px;
+    flex-direction:column;
+    gap:18px;
+    padding:18px;
 }
 
 .nav-links{
@@ -2868,108 +3063,346 @@ body{
     flex-wrap:wrap;
 }
 
-.user-name{
-    display:none;
+.user-info{
+    margin-left:0;
 }
 
-/* Hero */
-
-.hero-section{
-    display:flex;
-    flex-direction:column;
-    padding:22px;
 }
-
-.hero-left{
-    text-align:center;
-}
+@media(max-width:768px){
 
 .hero-left h1{
-    font-size:30px;
+    font-size:2rem;
 }
 
 .hero-left p{
-    max-width:100%;
+    font-size:15px;
+    line-height:1.7;
 }
 
+}
+@media(max-width:768px){
+
 .hero-meta{
-    justify-content:center;
-    flex-wrap:wrap;
+    flex-direction:column;
+    width:100%;
 }
 
 .hero-badge{
-    flex:1 1 220px;
-    justify-content:center;
-}
-
-/* Goal Card */
-
-.hero-right{
     width:100%;
 }
+
+}
+@media(max-width:768px){
 
 .motivation-card{
     width:100%;
-    max-width:none;
+    padding:24px;
 }
 
-/* Summary */
-
-.dashboard-summary{
-    display:grid;
-    grid-template-columns:1fr;
 }
-
-/* Quick Actions */
+@media(max-width:768px){
 
 .quick-actions{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
 }
 
 .quick-btn{
     width:100%;
 }
 
-/* Dashboard Cards */
+}
+@media(max-width:768px){
+
+.dashboard-summary{
+    flex-direction:column;
+}
+
+.summary-card{
+    width:100%;
+}
+
+}
+@media(max-width:768px){
 
 .cards{
+    display:grid;
     grid-template-columns:1fr;
+    gap:18px;
 }
 
-/* Profile */
-
-.profile-top{
-    flex-direction:column;
-    text-align:center;
 }
-
-.profile-avatar{
-    margin:auto;
-}
-
-.profile-info{
-    grid-template-columns:1fr;
-}
-
-.profile-stats{
-    grid-template-columns:1fr;
-}
-
-/* Tables */
-
 .problem-card{
     overflow-x:auto;
 }
 
 table{
-    min-width:700px;
+    min-width:650px;
+}
+@media(max-width:768px){
+
+.dashboard,
+.tracker-page,
+.profile-page{
+    padding:20px;
+}
+
+}
+@media(max-width:768px){
+
+h1{
+    font-size:2rem;
+}
+
+h2{
+    font-size:1.5rem;
+}
+
+h3{
+    font-size:1.2rem;
+}
+
+}
+@media(max-width:768px){
+
+button{
+    min-height:48px;
+}
+
+}
+@media(max-width:768px){
+
+.card,
+.problem-card,
+.summary-card,
+.motivation-card{
+    padding:20px;
 }
 
 }
 
 
-/* ---------- Phones ---------- */
+/* =========================================
+   MOBILE RESPONSIVE (LAST LINES OF FILE)
+=========================================*/
+
+@media screen and (max-width:768px){
+
+.dashboard{
+    width:100%;
+    padding:16px;
+    box-sizing:border-box;
+}
+
+/* HERO */
+
+.hero-section{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:20px !important;
+}
+
+.hero-left,
+.hero-right{
+    width:100% !important;
+    max-width:100% !important;
+}
+
+.hero-left h1{
+    font-size:34px !important;
+    line-height:1.2;
+}
+
+.hero-left p{
+    font-size:15px;
+}
+
+.hero-meta{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.hero-badge{
+    width:100%;
+    justify-content:center;
+}
+
+/* QUICK ACTIONS */
+
+.quick-actions{
+    display:grid !important;
+    grid-template-columns:1fr 1fr !important;
+    gap:12px !important;
+}
+
+.quick-btn{
+    width:100%;
+}
+
+/* SUMMARY */
+
+.dashboard-summary{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+}
+
+.summary-card{
+    width:100% !important;
+}
+
+/* TRACKERS */
+
+.cards{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:18px;
+}
+
+.stats-card{
+    width:100%;
+}
+
+/* AI CARD */
+
+.ai-card{
+    width:100%;
+}
+
+/* NAVBAR */
+
+.navbar{
+    flex-direction:column;
+    align-items:center;
+    padding:18px;
+}
+
+.nav-links{
+    width:100%;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+}
+
+.user-info{
+    margin-left:0;
+}
+
+/* TABLES */
+
+table{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+}
+
+.hero-right{
+    flex:1;
+    width:100%;
+    max-width:420px;
+    min-width:0;
+}
+@media (max-width:768px){
+
+.hero-right{
+    max-width:100%;
+}
+
+}
+
+
+
+/* ==========================================================
+   RESPONSIVE PATCH - PART 1
+   Global Layout
+   (Paste at END of Previous_App.css)
+========================================================== */
+
+
+/* ---------- Large Laptop ---------- */
+
+@media (max-width:1200px){
+
+.dashboard,
+.profile-page,
+.settings-page,
+.tracker-page{
+    padding:30px 35px;
+}
+
+}
+
+
+/* ---------- Laptop ---------- */
+
+@media (max-width:992px){
+
+.dashboard,
+.profile-page,
+.settings-page,
+.tracker-page{
+    padding:24px;
+}
+
+.cards{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:22px;
+}
+
+.problem-card,
+.form-card,
+.ai-wrapper,
+.profile-card{
+    width:100%;
+    max-width:100%;
+    box-sizing:border-box;
+}
+
+table{
+    width:100%;
+}
+
+}
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:768px){
+
+.dashboard,
+.profile-page,
+.settings-page,
+.tracker-page{
+    padding:20px 16px;
+}
+
+.cards{
+    grid-template-columns:1fr;
+    gap:18px;
+}
+
+.problem-card,
+.form-card,
+.ai-wrapper,
+.profile-card{
+    padding:20px;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+}
+
+
+/* ---------- Mobile ---------- */
 
 @media (max-width:480px){
 
@@ -2980,394 +3413,12 @@ table{
     padding:14px;
 }
 
-.hero-section{
-    padding:18px;
+.problem-card,
+.form-card,
+.ai-wrapper,
+.profile-card{
+    padding:16px;
+    border-radius:16px;
 }
-
-.hero-left h1{
-    font-size:26px;
-}
-
-.hero-left p{
-    font-size:14px;
-}
-
-.hero-meta{
-    flex-direction:column;
-}
-
-.hero-badge{
-    width:100%;
-}
-
-.quick-actions{
-    grid-template-columns:1fr;
-}
-
-.quick-btn{
-    width:100%;
-}
-
-.motivation-card{
-    padding:20px;
-}
-
-.stats-card{
-    width:100%;
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* =====================================================
-   FINAL MOBILE PATCH
-   ===================================================== */
-
-@media (max-width:768px){
-
-/* ---------- Navbar ---------- */
-
-.navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:12px 16px;
-    gap:12px;
-    flex-wrap:nowrap;
-}
-
-.logo{
-    font-size:28px;
-    flex-shrink:0;
-}
-
-.nav-links{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:8px;
-    flex:1;
-    flex-wrap:nowrap;
-}
-
-.nav-links a,
-.nav-links button{
-    font-size:12px;
-    padding:6px 10px;
-    white-space:nowrap;
-}
-
-.user-info{
-    display:flex !important;
-    align-items:center;
-    justify-content:flex-end;
-    gap:8px;
-    flex-shrink:0;
-}
-
-.user-name{
-    display:none;
-}
-
-.avatar{
-    display:flex !important;
-    width:40px;
-    height:40px;
-    flex-shrink:0;
-}
-
-
-/* ---------- Hero ---------- */
-
-.hero-section{
-    display:flex;
-    flex-direction:column;
-    gap:24px;
-    padding:22px;
-}
-
-.hero-left{
-    text-align:center;
-}
-
-.hero-left h1{
-    font-size:30px;
-}
-
-.hero-meta{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:12px;
-}
-
-.hero-badge{
-    width:100%;
-    max-width:260px;
-}
-
-
-/* ---------- Goal ---------- */
-
-.hero-right{
-    display:flex;
-    justify-content:center;
-}
-
-.motivation-card{
-    width:100%;
-    max-width:320px;
-    padding:20px;
-}
-
-
-/* ---------- Quick Buttons ---------- */
-
-.quick-actions{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
-}
-
-.quick-btn{
-    width:100%;
-}
-
-
-/* ---------- Summary ---------- */
-
-.dashboard-summary{
-    grid-template-columns:1fr;
-}
-
-
-/* ---------- Dashboard Cards ---------- */
-
-.cards{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:18px;
-}
-
-.stats-card{
-    width:100%;
-    min-width:0;
-    box-sizing:border-box;
-}
-
-
-/* ---------- Filters ---------- */
-
-.filters{
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-}
-
-.filters input,
-.filters select{
-    width:100%;
-    min-width:0;
-}
-
-
-/* ---------- AI ---------- */
-
-.ai-prompt-grid{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:10px;
-}
-
-.ai-chip{
-    max-width:280px;
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-.hero-badge{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-
-    padding:10px 18px;
-
-    width:fit-content;
-    min-width:190px;
-    max-width:250px;
-
-    height:44px;
-
-    border-radius:12px;
-
-    white-space:nowrap;
-
-    margin:auto;
-}
-
-.hero-meta{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:14px;
-}
-.motivation-card{
-
-width:100%;
-
-max-width:320px;
-
-margin:auto;
-
-padding:22px;
-
-transform:none;
-
-box-sizing:border-box;
-
-}
-@media(max-width:768px){
-
-.navbar{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:12px 16px;
-
-flex-wrap:nowrap;
-
-}
-
-.logo{
-
-font-size:28px;
-
-flex-shrink:0;
-
-}
-
-.nav-links{
-
-display:flex;
-
-gap:8px;
-
-flex:1;
-
-justify-content:center;
-
-overflow-x:auto;
-
-white-space:nowrap;
-
-}
-
-.nav-links::-webkit-scrollbar{
-
-display:none;
-
-}
-
-.user-info{
-
-display:flex;
-
-align-items:center;
-
-flex-shrink:0;
-
-}
-
-.user-name{
-
-display:none;
-
-}
-
-.avatar{
-
-display:flex !important;
-
-width:40px;
-
-height:40px;
-
-}
-
-}
-@media(max-width:768px){
-
-.filters{
-
-display:grid;
-
-grid-template-columns:1fr;
-
-gap:12px;
-
-}
-
-.filters input,
-.filters select{
-
-width:100%;
-
-}
-
-}
-.problem-card{
-
-width:100%;
-
-overflow:hidden;
-
-box-sizing:border-box;
-
-}
-
-.problem-card *{
-
-max-width:100%;
-
-word-break:break-word;
-
-}
-.profile-stats{
-
-display:grid;
-
-grid-template-columns:1fr;
-
-gap:15px;
-
-}
-
-.profile-stat{
-
-width:100%;
 
 }
