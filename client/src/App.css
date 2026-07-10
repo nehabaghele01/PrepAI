@@ -3606,3 +3606,38 @@ table{
 }
 
 }
+
+/* ======================================================
+   Placement Tips Mobile Fix
+====================================================== */
+
+@media (max-width:768px){
+
+.ai-card{
+    width:100%;
+    max-width:100%;
+    box-sizing:border-box;
+
+    padding:20px;
+
+    overflow:hidden;
+
+    margin:20px auto;
+}
+
+.ai-card h2{
+    font-size:22px;
+    word-break:break-word;
+}
+
+.tips-list{
+    padding-left:20px;
+    margin:0;
+}
+
+.tips-list li{
+    word-break:break-word;
+    line-height:1.7;
+}
+
+}
