@@ -3299,3 +3299,16 @@ table{
 
 }
 
+.hero-right{
+    flex:1;
+    width:100%;
+    max-width:420px;
+    min-width:0;
+}
+@media (max-width:768px){
+
+.hero-right{
+    max-width:100%;
+}
+
+}
