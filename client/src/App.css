@@ -3641,3 +3641,69 @@ table{
 }
 
 }
+
+
+
+
+/* =====================================================
+   Tracker Search Filter Mobile Fix
+===================================================== */
+
+@media (max-width:768px){
+
+.search-filter-bar{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    width:100%;
+
+    box-sizing:border-box;
+
+}
+
+.search-input,
+
+.filter-dropdown{
+
+    width:100% !important;
+
+    max-width:100% !important;
+
+    min-width:0 !important;
+
+    margin:0 !important;
+
+    box-sizing:border-box !important;
+
+}
+
+}
+
+.ai-chat-card{
+
+    
+
+    box-sizing:border-box;
+
+    overflow:hidden;
+
+}
+.ai-textarea{
+
+    
+    box-sizing:border-box;
+
+    display:block;
+
+}
+.search-input{
+    width:400px;
+}
+.search-filter-bar{
+    display:grid;
+    grid-template-columns:...
+}
