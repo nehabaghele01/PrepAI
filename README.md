@@ -285,9 +285,7 @@ VITE_API_URL=YOUR_BACKEND_URL/api
 
 **Neha Baghele**
 
-B.Tech CSE (2023–2027)
-
-Samrat Ashok Technological Institute (SATI), Vidisha
+B.Tech CSE
 
 GitHub:
 https://github.com/nehabaghele01
@@ -297,6 +295,3 @@ https://www.linkedin.com/in/neha-baghele-621050268/
 
 ---
 
-## ⭐ If you like this project
-
-Give this repository a ⭐ on GitHub.
