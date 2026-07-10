@@ -3705,7 +3705,7 @@ table{
 }
 .search-filter-bar{
     display:grid;
-    grid-template-columns;
+    grid-template:columns;
 }
 /* ===============================
    SEARCH FILTER
