@@ -3208,3 +3208,173 @@ display:flex !important;
 }
 
 }
+
+@media (max-width:768px){
+
+.user-info{
+    display:flex !important;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    overflow:visible !important;
+}
+
+.avatar{
+    display:flex !important;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+
+    width:42px;
+    height:42px;
+}
+
+.user-dropdown{
+    position:absolute;
+    right:0;
+}
+
+}
+
+@media(max-width:768px){
+
+.motivation-card{
+
+max-width:340px;
+
+padding:20px;
+
+margin:auto;
+
+transform:none;
+
+}
+
+.motivation-card h3{
+
+font-size:22px;
+
+}
+
+.goal-item{
+
+font-size:14px;
+
+}
+
+}
+@media(max-width:768px){
+
+.filters{
+
+display:flex;
+
+flex-direction:column;
+
+gap:12px;
+
+}
+
+.filters select,
+.filters input{
+
+width:100%;
+
+min-width:0;
+
+box-sizing:border-box;
+
+}
+
+}
+@media(max-width:768px){
+
+.problem-card{
+
+width:100%;
+
+box-sizing:border-box;
+
+overflow:hidden;
+
+}
+
+.problem-card *{
+
+max-width:100%;
+
+}
+
+}
+@media(max-width:768px){
+
+.ai-prompt-grid{
+
+display:flex;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:10px;
+
+}
+
+.ai-chip{
+
+width:auto;
+
+max-width:280px;
+
+}
+
+}
+@media(max-width:768px){
+
+.navbar{
+
+padding:14px;
+
+}
+
+.logo{
+
+font-size:30px;
+
+}
+
+.nav-links{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:8px;
+
+}
+
+.nav-links button{
+
+font-size:12px;
+
+padding:8px 12px;
+
+}
+
+.user-name{
+
+display:none;
+
+}
+
+.avatar{
+
+display:flex !important;
+
+}
+
+}
