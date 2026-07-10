@@ -3422,3 +3422,150 @@ table{
 }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =======================================================
+   FINAL MOBILE FIX PATCH
+   ======================================================= */
+
+@media (max-width:768px){
+
+/* ---------------- Dashboard ---------------- */
+
+.dashboard{
+    overflow-x:hidden;
+}
+
+.hero-section{
+    padding:20px !important;
+    overflow:hidden;
+}
+
+.hero-meta{
+    padding:0 10px;
+}
+
+.hero-badge{
+    width:calc(100% - 20px);
+    margin:auto;
+}
+
+.hero-right{
+    margin-top:18px;
+    display:flex;
+    justify-content:center;
+}
+
+.motivation-card{
+    width:100%;
+    max-width:300px;
+    margin:auto;
+    transform:none !important;
+}
+
+/* Dashboard Stats */
+
+.cards{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:18px;
+}
+
+.stats-card{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+
+/* Placement Tips */
+
+.placement-tip,
+.tip-card{
+    width:100%;
+    max-width:100%;
+    box-sizing:border-box;
+}
+
+/* ---------------- All Tracker Pages ---------------- */
+
+.filters{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.filters input,
+.filters select{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    box-sizing:border-box;
+}
+
+/* ---------------- AI Coach ---------------- */
+
+.ai-prompt-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+}
+
+.ai-chip{
+    margin:0;
+}
+
+/* ---------------- Profile ---------------- */
+
+.profile-top{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.profile-avatar{
+    margin:0 auto 18px;
+}
+
+.profile-info{
+    text-align:center;
+}
+
+.profile-info h2,
+.profile-info h3,
+.profile-info p{
+    text-align:center;
+}
+
+/* ---------------- Admin ---------------- */
+
+.recent-users,
+.user-management,
+.admin-table,
+.users-table{
+    overflow-x:auto;
+}
+
+.recent-users table,
+.user-management table,
+.admin-table table,
+.users-table table{
+    min-width:700px;
+}
+
+}
