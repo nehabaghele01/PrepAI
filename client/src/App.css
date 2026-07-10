@@ -3312,3 +3312,113 @@ table{
 }
 
 }
+
+
+
+/* ==========================================================
+   RESPONSIVE PATCH - PART 1
+   Global Layout
+   (Paste at END of Previous_App.css)
+========================================================== */
+
+
+/* ---------- Large Laptop ---------- */
+
+@media (max-width:1200px){
+
+.dashboard,
+.profile-page,
+.settings-page,
+.tracker-page{
+    padding:30px 35px;
+}
+
+}
+
+
+/* ---------- Laptop ---------- */
+
+@media (max-width:992px){
+
+.dashboard,
+.profile-page,
+.settings-page,
+.tracker-page{
+    padding:24px;
+}
+
+.cards{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:22px;
+}
+
+.problem-card,
+.form-card,
+.ai-wrapper,
+.profile-card{
+    width:100%;
+    max-width:100%;
+    box-sizing:border-box;
+}
+
+table{
+    width:100%;
+}
+
+}
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:768px){
+
+.dashboard,
+.profile-page,
+.settings-page,
+.tracker-page{
+    padding:20px 16px;
+}
+
+.cards{
+    grid-template-columns:1fr;
+    gap:18px;
+}
+
+.problem-card,
+.form-card,
+.ai-wrapper,
+.profile-card{
+    padding:20px;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:480px){
+
+.dashboard,
+.profile-page,
+.settings-page,
+.tracker-page{
+    padding:14px;
+}
+
+.problem-card,
+.form-card,
+.ai-wrapper,
+.profile-card{
+    padding:16px;
+    border-radius:16px;
+}
+
+}
