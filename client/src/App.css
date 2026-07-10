@@ -3195,3 +3195,258 @@ table{
 }
 
 }
+
+
+
+
+
+
+
+
+
+
+.hero-badge{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:10px 18px;
+
+    width:fit-content;
+    min-width:190px;
+    max-width:250px;
+
+    height:44px;
+
+    border-radius:12px;
+
+    white-space:nowrap;
+
+    margin:auto;
+}
+
+.hero-meta{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:14px;
+}
+.motivation-card{
+
+width:100%;
+
+max-width:320px;
+
+margin:auto;
+
+padding:22px;
+
+transform:none;
+
+box-sizing:border-box;
+
+}
+@media(max-width:768px){
+
+.navbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:12px 16px;
+
+flex-wrap:nowrap;
+
+}
+
+.logo{
+
+font-size:28px;
+
+flex-shrink:0;
+
+}
+
+.nav-links{
+
+display:flex;
+
+gap:8px;
+
+flex:1;
+
+justify-content:center;
+
+overflow-x:auto;
+
+white-space:nowrap;
+
+}
+
+.nav-links::-webkit-scrollbar{
+
+display:none;
+
+}
+
+.user-info{
+
+display:flex;
+
+align-items:center;
+
+flex-shrink:0;
+
+}
+
+.user-name{
+
+display:none;
+
+}
+
+.avatar{
+
+display:flex !important;
+
+width:40px;
+
+height:40px;
+
+}
+
+}
+@media(max-width:768px){
+
+.filters{
+
+display:grid;
+
+grid-template-columns:1fr;
+
+gap:12px;
+
+}
+
+.filters input,
+.filters select{
+
+width:100%;
+
+}
+
+}
+.problem-card{
+
+width:100%;
+
+overflow:hidden;
+
+box-sizing:border-box;
+
+}
+
+.problem-card *{
+
+max-width:100%;
+
+word-break:break-word;
+
+}
+.profile-stats{
+
+display:grid;
+
+grid-template-columns:1fr;
+
+gap:15px;
+
+}
+
+.profile-stat{
+
+width:100%;
+
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    flex-shrink:0;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    flex:1;
+}
+
+.user-info{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-shrink:0;
+}
+
+@media (max-width:768px){
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px;
+    gap:10px;
+}
+
+.logo{
+    font-size:24px;
+}
+
+.nav-links{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    overflow-x:auto;
+    scrollbar-width:none;
+}
+
+.nav-links::-webkit-scrollbar{
+    display:none;
+}
+
+.nav-links button,
+.placement-btn{
+    font-size:12px;
+    white-space:nowrap;
+    padding:7px 10px;
+}
+
+.user-info{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.user-name{
+    display:none;
+}
+
+.avatar{
+    width:38px;
+    height:38px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+}
