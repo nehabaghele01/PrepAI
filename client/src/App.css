@@ -2792,17 +2792,7 @@ body{
   font-weight: 700;
 }
 
-/* .admin-page{
-    background:
-        radial-gradient(circle at top left, rgba(37,99,235,.18), transparent 35%),
-        radial-gradient(circle at top right, rgba(59,130,246,.14), transparent 30%),
-        linear-gradient(
-            180deg,
-            #0b1224 0%,
-            #111827 40%,
-            #161b2f 100%
-        );
-} */
+
 
 
 /* ==========================================================
@@ -3038,27 +3028,81 @@ table{
 
 
 
-.hero-badge{
+
+/* =====================================================
+   FINAL MOBILE PATCH
+   ===================================================== */
+
+@media (max-width:768px){
+
+/* ---------- Navbar ---------- */
+
+.navbar{
     display:flex;
+    justify-content:space-between;
     align-items:center;
-    justify-content:center;
-    gap:8px;
-
-    padding:12px 18px;
-
-    min-width:180px;
-    width:auto;
-
-    height:auto;
-    min-height:48px;
-
-    border-radius:999px;
-
-    white-space:nowrap;
-
-    flex:0 1 auto;
+    padding:12px 16px;
+    gap:12px;
+    flex-wrap:nowrap;
 }
-@media(max-width:768px){
+
+.logo{
+    font-size:28px;
+    flex-shrink:0;
+}
+
+.nav-links{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    flex:1;
+    flex-wrap:nowrap;
+}
+
+.nav-links a,
+.nav-links button{
+    font-size:12px;
+    padding:6px 10px;
+    white-space:nowrap;
+}
+
+.user-info{
+    display:flex !important;
+    align-items:center;
+    justify-content:flex-end;
+    gap:8px;
+    flex-shrink:0;
+}
+
+.user-name{
+    display:none;
+}
+
+.avatar{
+    display:flex !important;
+    width:40px;
+    height:40px;
+    flex-shrink:0;
+}
+
+
+/* ---------- Hero ---------- */
+
+.hero-section{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+    padding:22px;
+}
+
+.hero-left{
+    text-align:center;
+}
+
+.hero-left h1{
+    font-size:30px;
+}
 
 .hero-meta{
     display:flex;
@@ -3071,310 +3115,83 @@ table{
     width:100%;
     max-width:260px;
 }
-}
-@media(max-width:768px){
+
+
+/* ---------- Goal ---------- */
 
 .hero-right{
-    width:100%;
+    display:flex;
+    justify-content:center;
 }
 
 .motivation-card{
-
     width:100%;
-
-    max-width:420px;
-
-    margin:auto;
-
-    padding:24px;
-
-    box-sizing:border-box;
+    max-width:320px;
+    padding:20px;
 }
 
-}
-@media(max-width:768px){
 
-.cards{
-
-display:grid;
-
-grid-template-columns:1fr;
-
-gap:18px;
-
-}
-
-.stats-card{
-
-width:100%;
-
-min-width:0;
-
-box-sizing:border-box;
-
-}
-
-}
-@media(max-width:768px){
-
-.dashboard-summary{
-
-display:grid;
-
-grid-template-columns:1fr;
-
-gap:16px;
-
-}
-
-.summary-card{
-
-width:100%;
-
-}
-
-}
-@media(max-width:768px){
+/* ---------- Quick Buttons ---------- */
 
 .quick-actions{
-
-display:grid;
-
-grid-template-columns:1fr;
-
-gap:14px;
-
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
 }
 
 .quick-btn{
-
-width:100%;
-
+    width:100%;
 }
 
-}
-@media(max-width:768px){
 
-.navbar{
+/* ---------- Summary ---------- */
 
-display:flex;
-
-flex-direction:column;
-
-align-items:center;
-
-padding:16px;
-
-gap:16px;
-
+.dashboard-summary{
+    grid-template-columns:1fr;
 }
 
-.logo{
 
-font-size:28px;
+/* ---------- Dashboard Cards ---------- */
 
+.cards{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:18px;
 }
 
-.nav-links{
-
-display:flex;
-
-flex-wrap:wrap;
-
-justify-content:center;
-
-gap:10px;
-
-width:100%;
-
+.stats-card{
+    width:100%;
+    min-width:0;
+    box-sizing:border-box;
 }
 
-.user-info{
 
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-gap:10px;
-
-}
-
-.avatar{
-
-display:flex !important;
-
-}
-
-}
-
-@media (max-width:768px){
-
-.user-info{
-    display:flex !important;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
-    overflow:visible !important;
-}
-
-.avatar{
-    display:flex !important;
-    align-items:center;
-    justify-content:center;
-    flex-shrink:0;
-
-    width:42px;
-    height:42px;
-}
-
-.user-dropdown{
-    position:absolute;
-    right:0;
-}
-
-}
-
-@media(max-width:768px){
-
-.motivation-card{
-
-max-width:340px;
-
-padding:20px;
-
-margin:auto;
-
-transform:none;
-
-}
-
-.motivation-card h3{
-
-font-size:22px;
-
-}
-
-.goal-item{
-
-font-size:14px;
-
-}
-
-}
-@media(max-width:768px){
+/* ---------- Filters ---------- */
 
 .filters{
-
-display:flex;
-
-flex-direction:column;
-
-gap:12px;
-
+    display:flex;
+    flex-direction:column;
+    gap:12px;
 }
 
-.filters select,
-.filters input{
-
-width:100%;
-
-min-width:0;
-
-box-sizing:border-box;
-
+.filters input,
+.filters select{
+    width:100%;
+    min-width:0;
 }
 
-}
-@media(max-width:768px){
 
-.problem-card{
-
-width:100%;
-
-box-sizing:border-box;
-
-overflow:hidden;
-
-}
-
-.problem-card *{
-
-max-width:100%;
-
-}
-
-}
-@media(max-width:768px){
+/* ---------- AI ---------- */
 
 .ai-prompt-grid{
-
-display:flex;
-
-flex-wrap:wrap;
-
-justify-content:center;
-
-gap:10px;
-
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
 }
 
 .ai-chip{
-
-width:auto;
-
-max-width:280px;
-
-}
-
-}
-@media(max-width:768px){
-
-.navbar{
-
-padding:14px;
-
-}
-
-.logo{
-
-font-size:30px;
-
-}
-
-.nav-links{
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-flex-wrap:wrap;
-
-gap:8px;
-
-}
-
-.nav-links button{
-
-font-size:12px;
-
-padding:8px 12px;
-
-}
-
-.user-name{
-
-display:none;
-
-}
-
-.avatar{
-
-display:flex !important;
-
+    max-width:280px;
 }
 
 }
